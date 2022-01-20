@@ -1,0 +1,520 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>UIKit CW2 Template</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8" />
+
+    <!-- this temaple uses the UIkit HTML framework
+      go to https://getuikit.com/docs/introduction to read the documentation-->
+
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="../sandbox2/uikit-3.9.4/css/uikit.css" />
+
+    <!-- UIkit JS -->
+    <script src="../sandbox2/uikit-3.9.4/js/uikit.js"></script>
+    <script src="../sandbox2/uikit-3.9.4/js/uikit.min.js"></script>
+    <script src="../sandbox2/uikit-3.9.4/js/echarts.js"></script>
+
+</head>
+<body>
+    <div class="uk-cover-container uk-height-viewport">
+        <img src="../sandbox2/未命名文件夹/newseventsimage_1639588774894_mainnews2012_x4.jpeg"  uk-cover>
+         <div class="uk-inline-clip uk-position-center uk-text-center uk-overlay-primary uk-padding">
+                <h1 class="uk-heading-primary">Twitter analysis report of the Omicron virus</h1>
+                <h3>A study on Omicron<br>
+                    Author: Kang Chen</h3>
+                <a href="#start" data-uk-scroll><span class="uk-text-emphasis" uk-icon="icon: chevron-down;ratio: 4"></span></a>
+        </div>
+    </div>
+
+    <div class="uk-container uk-width-1-2@m uk-margin-large">
+
+        <!-- elements added here get the uk-containers stlyes -->
+
+            <!-- Timeline of the coronavirus outbreak-->
+        <h3 class="uk-text-center" id="biscuits"><strong>Timeline of the coronavirus outbreak</strong></h3>
+        <p id="start">
+            Severe acute respiratory syndrome coronavirus type 2 (SARS-CoV-2) is a coronavirus that caused the coronavirus disease 2019 (COVID-19) 
+            disease outbreak in late 2019 in Wuhan China. By early 2020, the disease had rapidly spread across the world and was declared a global 
+            pandemic as a public health emergency of international concern. The virus spreads from person to person by respiratory droplets in close contact between sick and asymptomatic people (within 6 feet). Transmission by aerosols and maybe contact with fomites is also a possibility, although this is not considered to be the most probable route. SARS-CoV-2 pathogenesis is dependent on the viral spike protein binding to angiotensin-converting enzyme 2 (ACE2) receptors, with cell entrance required ACE2 receptor cleavage by a type 2 transmembrane serine protease to activate the viral spike protein. COVID-19 individuals have a wide range of clinical symptoms, from moderate to severe, fast progressive, and acute disease. The diagnosis of COVID-19 is nonspecific, and the virus may manifest itself in a variety of ways, ranging from no symptoms
+            (asymptomatic) to severe pneumonia and death. The COVID-19 pandemic response plan is based on the development of therapeutic alternatives and vaccination formulations.
+
+        <figure class="uk-align-right uk-margin-top uk-width-1-3">
+            <img src="../sandbox2/未命名文件夹/hub_omicron_article.jpeg">
+            <figcaption class="uk-text-center uk-text-small"></figcaption>
+        </figure>
+
+        <p>The term “variant of concern” (VOC) for SARS-CoV-2 (which produces COVID-19) refers to viral variants with mutations in their spike protein receptor-binding domain (RBD) that dramatically improve binding affinity in the RBD-hACE2 complex while also causing fast dissemination in human populations. Increased viral replication increases the likelihood of SARS-CoV-2 mutations forming. Therefore, the only option to end the pandemic is for effective vaccinations against circulating variations to be extensively and fairly delivered globally. As raising nations are rushing to vaccinate their people within months, they risk SARS-CoV-2 evolving into a new lineage that vaccines may not be able to protect against in other countries. To combat some emerging SARS-CoV-2 strains, new vaccinations may need to be developed regularly. With the introduction of extremely infectious SARS-CoV-2 variants, greater vaccine penetration will be required to build protective immunity, and children may also need to be vaccinated. 
+
+           <br><br>Although the majority of SARS-CoV-2 sequence changes are projected to be detrimental and swiftly removed or to be neutral, a small number are predicted to influence functional characteristics, possibly modifying infection rate, disease severity, or interactions with the host immune system. Nonetheless, beginning in late 2020, the development of SARS-CoV-2 has been marked by the introduction of “variants of concern,” or changes in viral properties such as disease transmission and antigenicity, most likely because of the changing immunological composition of the human species.
+            The Delta variant (B.1.617.2) was discovered for the first time in India in late 2020. The Delta version may have invaded over 163 nations by August 24, 2021. The World Health Organization stated in June 2021 that the Delta strain is on its way to becoming the most prevalent strain in the world. Therefore, the Delta variant was changed from Variant of Interest (VOI) to VOC. According to present evidence, the SARS-CoV-2 Delta VOC is 40%–60% more transmissible than the Alpha (B.1.1.7) VOC and may be associated with an increased risk of hospitalization. The Delta VOC mostly endangers those who are unvaccinated or just partially vaccinated. 
+            </p>
+  
+        <h3 class="uk-text-center" id="biscuits"><strong> advent of Omicron</strong></h3>
+
+        <p>On November 26, 2021, the World Health Organization's Technical Advisory Group on Virus Evolution (TAG-VE) proposed that variant B.1.1.529, commonly known as Omicron, be identified as a VOC. The TAG-VE made this decision after discovering that Omicron has several mutations that might impact how quickly it spreads or the severity of the disease it causes. The spike protein's variation is determined by 30 mutations, 15 of which occur in the RBD, as well as 3 small deletions and 1 minor insertion. This mutation was discovered in samples collected in Botswana on November 11, 2021, and South Africa on November 14, 2021. As of November 26, 2021, travel-related occurrences have also been documented in Belgium, Hong Kong, and Israel. The Omicron variant is the most divergent strain seen in significant numbers so far during the pandemic, raising concerns that it may be linked to greater transmissibility, lower vaccine efficiency, and an increased risk of reinfection. Globally, the number of nations reporting SARS-CoV-2 Omicron VOC infections continues to rise, with a total of 352 confirmed cases reported by 27 countries as of December 1, 2021 (Kumar, Thambiraja, Karuppanan and Subramaniam, 2021). Omicron is the most severely mutated variant that has appeared to date. These mutations may lead to large conformational changes, which may affect infectivity, disease severity and immune evasion capabilities. Although Omicron appears to exhibit a tendency to be highly infectious, which has caused some alarm worldwide, substantial virological or immunological evidence is lacking (Zhang et al., 2021).</p>
+       
+       <!--  Data acquisition-->
+       <h3 class="uk-text-center" id="cake"><strong>Data acquisition</strong></h3>
+
+        <p>Due to the shortcomings of Twint in terms of data collection, I also chose to use TAGS to help with data collection. The other part of the data came from TAGS v6.1. Due to the sheer volume of discussion on search terms, I chose to analyse a shorter sample. At the end of the final analysis I found that the single day sample, while it was possible to analyse the tweets for relevant terms and crawl for associated content, did not reveal the amount of change over multiple days of the epidemic. This required several consecutive days of data crawling. This is a reflection on this data analysis.</p>
+
+        <h3 class="uk-text-center" id="cake"><strong>Data analysis</strong></h3>
+        <p class="uk-text-center"><strong>information about the dataset</strong></p>
+
+        <p>First tweet: 14/01/2021 00:03:01   -  Last tweet: 15/01/2021 12:34:29 - Total number of tweets: 8911 </p> 
+        <p> Duration: 1 day 12 hours 32 minutes   -      Approximate number of hours: 36  -     Tweets per hour: 247</p>        
+
+        <p class="uk-text-center"><strong>Time series of tweets</strong></p>
+        
+        <p>By collecting tweets for one consecutive hour every ten minutes, the number of tweets for the six recorded times basically fluctuated around 200. This is able to see the value of the discussion at the peak of the Omicron outbreak.</p>
+         <div id= "zhexian1" class="uk-text-center" style="height: 500px; width:800px;">
+            
+        </div>
+    
+        <div id= "" class="uk-text-center" style="height: 40px; width:800px;">
+            Time period: 15 January 18:47- 19:47
+        </div>
+        <p>The dataset consists of 8911 original tweets and 7208 retweets. This shows that approximately 81% of the tweets were retweets and approximately 19% were original tweets.</p>
+        <div id= "bingtu1" class="uk-text-center" style="height: 500px; width:800px;">
+        </div> 
+
+           <h3 class="uk-text-center" id="cake"><strong>Top tweeter analysis</strong></h3> 
+           <p>In order to obtain valid information and data from ordinary people, I had to exclude some invalid data, such as bots. I used two tools to identify the authenticity of user accounts: one is Botometer (https://botometer.osome.iu.edu) and the other is foller.me (https://foller.me). Based on the results of the Botometer or foller.me and the manual checks, 7 bots were found out of 17 tweeters. Investigating their homepages I found that bots usually retweet a lot of the same content in a short period of time, even if the account has been registered for a long time and has more than a thousand followers. I found 97 tweets from the top 10 tweeters. I thought about the actual data and came up with the following rankings. [Top Tweeter].
+
+            Again I ranked 7 bots out of the top 17 Twitter retweeters to get the following ranking. [Top Retweeters].</p>
+        
+            <div class="uk-container uk-width-1-1\@l@m uk-margin-large">
+           <div class="form">
+                  <style type="text/css">
+                    .tftable {
+                      font-size: 12px;
+                      color: #333333;
+                      width: 100%;
+                      border-width: 1px;
+                      border-color: #a9a9a9;
+                      border-collapse: collapse;
+                    }
+
+                    .tftable th {
+                      color: #ffffff;
+                      font-size: 12px;
+                      background-color: #1dac48;
+                      border-width: 1px;
+                      padding: 8px;
+                      border-style: solid;
+                      border-color: #a9a9a9;
+                      text-align: left;
+                    }
+
+                    .tftable tr {
+                      background-color: #ffffff;
+                    }
+
+                    .tftable td {
+                      font-size: 12px;
+                      border-width: 1px;
+                      padding: 8px;
+                      border-style: solid;
+                      border-color: #a9a9a9;
+                    }
+                  </style>
+
+                  <table class="tftable" border="1">
+                    <tr>
+                      <th></th>
+                      <th>Top retweeters</th>
+                      <th>Amount of retweets</th>
+                    </tr>
+                    <tr>
+                      <td>1</td>
+                      <td>petedavo_au</td>
+                      <td>10</td>
+                    </tr>
+                    <tr>
+                      <td>2</td>
+                      <td>RexannaKeats</td>
+                      <td>9</td>
+                    </tr>
+                    <tr>
+                      <td>3</td>
+                      <td>Ramblingproses</td>
+                      <td>9</td>
+                    </tr>
+                    <tr>
+                      <td>4</td>
+                      <td>Jornalistavitor</td>
+                      <td>8</td>
+                    </tr>
+                    <tr>
+                      <td>5</td>
+                      <td>TrdisOprtr</td>
+                      <td>8</td>
+                    </tr>
+                    <tr>
+                      <td>6</td>
+                      <td>VeroMeleka</td>
+                      <td>8</td>
+                    </tr>
+                    <tr>
+                      <td>7</td>
+                      <td>Arttajart</td>
+                      <td>6</td>
+                    </tr>
+                    <tr>
+                      <td>8</td>
+                      <td>Bettsymgh</td>
+                      <td>6</td>
+                    </tr>
+                    <tr>
+                      <td>9</td>
+                      <td>Skatiq3</td>
+                      <td>6</td>
+                    </tr>
+                    <tr>
+                      <td>10</td>
+                      <td>8erpentineskies</td>
+                      <td>5</td>
+                    </tr>
+                  </table>
+
+
+                </div>
+
+              <br><br>
+              
+              <div class="form">
+                <style type="text/css">
+                  .tftable {
+                    font-size: 12px;
+                    color: #333333;
+                    width: 100%;
+                    border-width: 1px;
+                    border-color: #a9a9a9;
+                    border-collapse: collapse;
+                  }
+
+                  .tftable th {
+                    color: #ffffff;
+                    font-size: 12px;
+                    background-color: #1dac48;
+                    border-width: 1px;
+                    padding: 8px;
+                    border-style: solid;
+                    border-color: #a9a9a9;
+                    text-align: left;
+                  }
+
+                  .tftable tr {
+                    background-color: #ffffff;
+                  }
+
+                  .tftable td {
+                    font-size: 12px;
+                    border-width: 1px;
+                    padding: 8px;
+                    border-style: solid;
+                    border-color: #a9a9a9;
+                  }
+                </style>
+
+                <table class="tftable" border="1">
+                  <tr>
+                    <th></th>
+                    <th>Top tweeters</th>
+                    <th>Amount of tweets</th>
+                  </tr>
+                  <tr>
+                    <td>1</td>
+                    <td>SudarshanChate</td>
+                    <td>20</td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>petedavo_au</td>
+                    <td>17</td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td>SChenHayes</td>
+                    <td>10</td>
+                  </tr>
+                  <tr>
+                    <td>4</td>
+                    <td>Bob_Wachter</td>
+                    <td>10</td>
+                  </tr>
+                  <tr>
+                    <td>5</td>
+                    <td>Jornalistavitor</td>
+                    <td>9</td>
+                  </tr>
+                  <tr>
+                    <td>6</td>
+                    <td>RexannaKeats</td>
+                    <td>9</td>
+                  </tr>
+                  <tr>
+                    <td>7</td>
+                    <td>RexannaKeats</td>
+                    <td>9</td>
+                  </tr>
+                  <tr>
+                    <td>8</td>
+                    <td>doctormabuse18</td>
+                    <td>8</td>
+                  </tr>
+                  <tr>
+                    <td>9</td>
+                    <td>TrdisOprtr</td>
+                    <td>8</td>
+                  </tr>
+                  <tr>
+                    <td>10</td>
+                    <td>VeroMeleka</td>
+                    <td>8</td>
+                  </tr>
+                </table>
+
+
+              </div>
+
+            </div>
+        </div>
+        <div class="uk-container uk-width-1-2@m uk-margin-large">
+        <h3 class="uk-text-center" id="cake"><strong>Text understanding</strong></h3> 
+        <p class="uk-text-center"><strong>Word Cloud Generator</strong></p>
+           <p>I used the word cloud to extract some high frequency words from the tweet text and could find more words about medical care, e.g. Covid, Vaccine, Dleta, Health, Booster, Patients, Hospital, Deaths. it can be deduced that most of the content is about discussing the virus itself, probably about the evolution of Delta to Omicron evolution, mortality, vaccination-related aspects.</p>
+           <br><br><br> <img src="../sandbox2/未命名文件夹/wordcloud-3.svg">
+           <br><br><br>
+         <h3 class="uk-text-center" id="cake"><strong>Tweets location analysis</strong></h3> 
+        
+           <p>I have analysed the top 10 cities where tweets were sent. The highest number of tweets were sent from the United States, with 184. India was next with 57. Then there was the UK with 41 tweets.
+
+            The number of tweets with the word "omicron" in them is proportional to the severity of the outbreak in the region when comparing the current day and the most recent outbreak growth index.</p>
+            <div id= "bingtu2" class="uk-text-center" style="height: 500px; width:800px;">
+            </div> 
+            <h3 class="uk-text-center" id="cake"><strong>Demographic groupings</strong></h3> 
+        <p class="uk-text-center"><strong>Number of followers</strong></p>
+           <p>The tweeter with the highest number of followers is @nytimes with 513,66818 followers. The @nytimes is a well-known US news site and has a great influence. As a well-known US news account, it retweeted a report on an advisory about Omicron while the outbreak was still spreading.</p>
+           <p class="uk-text-center"><strong>Number of user friends</strong></p>
+           <p>The top three friends are @Free_Media_Hub, @SupermanHotMale and @lsferguson, the first two with over 200,000 friends and the third with over 100,000.</p>
+           <div id= "bingtu3" style="height: 600px; width:800px;">
+        </div> 
+        <br><br>
+        <h3 class="uk-text-center" id="cake"><strong>Number of followers</strong></h3> 
+        
+           <p>The tweeter with the most followers is @nytimes(https://twitter.com/intent/user?screen_name=nytimes&original_referer=https://botometer.osome.iu.edu/ ，with 51366818 followers). @nytimes is a well-known US news site and has a great influence. As a well-known US news account, it retweeted a report on an advisory about Omicron while the outbreak was still spreading.</p>
+           <div id= "zhuzhuangtu1" style="height: 600px; width:800px;">
+        
+        </div> 
+        <br><br><h3 class="uk-text-center" id="cake"><strong>Background information sources</strong></h3> 
+        <p>Kumar, S., Thambiraja, T., Karuppanan, K. and Subramaniam, G., 2021. Omicron and Delta variant of SARS‐CoV‐2: A comparative computational study of spike protein. Journal of Medical Virology,.
+
+            <br><br>Zhang, X., Wu, S., Wu, B., Yang, Q., Chen, A., Li, Y., Zhang, Y., Pan, T., Zhang, H. and He, X., 2021. SARS-CoV-2 Omicron strain exhibits potent capabilities for immune evasion and viral entrance. Signal Transduction and Targeted Therapy, 6(1).
+            </p>
+        </div>
+ 
+    <footer class="uk-text-center uk-margin-large">
+            <a href="#start" data-uk-scroll="">to the top</a>
+    </footer>
+
+
+
+</body>
+
+<script >
+//zhexian1
+    var chartDom = document.getElementById('zhexian1');
+var myChart = echarts.init(chartDom);
+var option;
+
+option = {
+  xAxis: {
+    type: 'category',
+    data: ['18:47', '18:57', '19:07', '19:17', '19:27', '19:37', '19:47']
+  },
+  yAxis: {
+    type: 'value'
+  },
+  series: [
+    {
+      data: [112, 232, 213, 220, 320, 228, 219],
+      type: 'line'
+    }
+  ]
+};
+
+option && myChart.setOption(option);
+
+
+//  BINGTU1
+var chartDom = document.getElementById('bingtu1');
+var myChart = echarts.init(chartDom);
+var option;
+
+option = {
+  tooltip: {
+    trigger: 'item'
+  },
+  legend: {
+    orient: 'vertical',
+    left: 'left'
+  },
+  series: [
+    {
+      name: 'Access From',
+      type: 'pie',
+      radius: '50%',
+      data: [
+        { value: 19, name: 'origin tweets' },
+        { value: 81, name: 'retweets' }
+      ],
+      emphasis: {
+        itemStyle: {
+          shadowBlur: 10,
+          shadowOffsetX: 0,
+          shadowColor: 'rgba(0, 0, 0, 0.5)'
+        }
+      }
+    }
+  ]
+};
+
+option && myChart.setOption(option);
+
+
+//bingtu2
+var chartDom = document.getElementById('bingtu2');
+var myChart = echarts.init(chartDom);
+var option;
+
+option = {
+  
+  tooltip: {
+    trigger: 'item'
+  },
+  legend: {
+    orient: 'vertical',
+    left: 'left'
+  },
+  series: [
+    {
+      name: 'Access From',
+      type: 'pie',
+      radius: '50%',
+      data: [
+        { value: 65, name: 'United States' },
+        { value: 25, name: 'India' },
+        { value: 15, name: 'United Kingdom' }
+      ],
+      emphasis: {
+        itemStyle: {
+          shadowBlur: 10,
+          shadowOffsetX: 0,
+          shadowColor: 'rgba(0, 0, 0, 0.5)'
+        }
+      }
+    }
+  ]
+};
+
+option && myChart.setOption(option);
+
+//bingtu3
+var chartDom = document.getElementById('bingtu3');
+var myChart = echarts.init(chartDom);
+var option;
+
+option = {
+  legend: {
+    top: 'bottom'
+  },
+  toolbox: {
+    show: true,
+    feature: {
+      mark: { show: true },
+      dataView: { show: true, readOnly: false },
+      restore: { show: true },
+      saveAsImage: { show: true }
+    }
+  },
+  series: [
+    {
+      name: 'Nightingale Chart',
+      type: 'pie',
+      radius: [50, 250],
+      center: ['50%', '50%'],
+      roseType: 'area',
+      itemStyle: {
+        borderRadius: 8
+      },
+      data: [
+        { value: 0.045, name: '100000+' },
+        { value: 1.672, name: '10000-99999' },
+        { value: 35.993, name: '1000-9999' },
+        { value: 50.146, name: '100-999' },
+        { value: 10.46, name: '10-99' },
+        { value: 1.684, name: '0-9' }
+      ]
+    }
+  ]
+};
+
+option && myChart.setOption(option);
+
+//zhuzhuangtu1
+var chartDom = document.getElementById('zhuzhuangtu1');
+var myChart = echarts.init(chartDom);
+var option;
+
+option = {
+ 
+  tooltip: {
+    trigger: 'axis',
+    axisPointer: {
+      type: 'shadow'
+    }
+  },
+  legend: {},
+  grid: {
+    left: '3%',
+    right: '4%',
+    bottom: '3%',
+    containLabel: true
+  },
+  xAxis: {
+    type: 'value',
+    boundaryGap: [0, 0.01]
+  },
+  yAxis: {
+    type: 'category',
+    data: [
+      '0-9',
+      '10-99',
+      '100-999',
+      '1000-9999',
+      '10000-99999',
+      '100000-999999',
+      '1000000-9999999',
+      '10000000+'
+    ]
+  },
+  series: [
+    {
+      type: 'bar',
+      data: [1, 3, 454, 4296, 816, 184, 38, 10]
+    }
+  ]
+};
+
+option && myChart.setOption(option);
+
+
+
+</script>
+
+
+</html>
